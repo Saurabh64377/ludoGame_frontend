@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/apna-ludo.png" type="image/x-icon">
+    <title>www.apnaludo.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .left-container {
+            border-right: 11px solid rgb(225, 223, 223);
+
+        }
+
+        .sidebar {
+            padding-top: 10px;
+        }
+
+        #menu {
+            max-width: 333px;
+            width: 100%;
+            position: fixed;
+            height: 100vh;
+            left: -399px;
+        }
+
+        #menu a {
+            max-width: 280px;
+            width: 100%;
+            height: 58px;
+            border-bottom: 1px solid rgb(223, 222, 222);
+            margin-left: 38px;
+            text-decoration: none;
+        }
+
+        #menu .position-absolute {
+            color: black;
+            /* font-weight: 600; */
+            font-size: 14px;
+        }
+
+        .sideNav-arrow {
+            color: rgb(188, 186, 186) !important;
+            padding-right: 20px;
+            font-size: 12px;
+        }
+
+        .side-icon {
+            color: rgb(1, 1, 52);
+            font-size: 30px;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <div class="row h-100">
+
+        <!-- left-container -->
+        <div class="left-container position-relative  col-sm-5 col-md-4 col-12"
+            style="max-width: 499px; width: 100%; z-index: 6;  background-color: #fff;">
+
+            <!-- navbar -->
+            <nav class="navbar border-bottom sticky-top  d-flex align-items-center justify-content-between"
+                style="background-color: #fff;">
+                <div class=" px-4">
+
+                    <img class="togl" height="14px" src="image/toggle-btn.svg" alt="">
+
+                    <a href="">
+                        <img height="50px" src="image/apna-ludo.png" alt="">
+                    </a>
+                </div>
+                <div class="position-relative mx-2 ">
+                    <a style="width: 100px; height: 30px;"
+                        class="btn btn-sm  border d-flex  bd-highlight align-items-center justify-content-between"
+                        href="money-box.html">
+                        <picture>
+                            <img height="19px" src="image/money.png" alt="">
+                        </picture>
+                        <div class=" position-absolute mt-3" style="font-size: 10px; left: 34px;">
+                            <span class="">CASH
+                                <p class="fw-bolder">0.00</p>
+                            </span>
+                        </div>
+                        <div class="h-100  border-start position-absolute " style="right: 20px;"></div>
+                        <picture>
+                            <img class="align-items-center justify-content-center d-flex position-absolute "
+                                style="right: 5px; top: 10px;" height="10px" src="image/money+.png" alt="">
+                        </picture>
+                    </a>
+                </div>
+            </nav>
+
+
+
+
+            <!-- siderbar -->
+            <nav id="menu" class="bg-light shadow " role="navigation">
+
+                <div class="sideNav sidenav-custome ">
+
+                    <a class="sidebar d-flex align-items-center justify-content-between position-relative "
+                        href="profile.html">
+                        <div class="sideNav-icon">
+                            <i class="fa fa-user-circle side-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="position-absolute " style="left: 50px;">
+                            <div class="sideNav-text ">My Profile</div>
+                        </div>
+
+                        <div class="sideNav-arrow"><i class="fa fa-angle-right text-secondary-subtle"
+                                aria-hidden="true"></i></div>
+
+                    </a>
+                    <a class="sidebar d-flex align-items-center justify-content-between position-relative"
+                        href="index.html">
+                        <div class="sideNav-icon">
+                            <i class="fa fa-gavel side-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="position-absolute" style="left: 50px;">
+                            <div class="sideNav-text ">Win Cash</div>
+                        </div>
+
+
+                        <div class="sideNav-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+
+                    </a>
+                    <a class="sidebar d-flex align-items-center justify-content-between position-relative" href="wallet.html">
+                        <div class="sideNav-icon "><i class="fa-solid fa-money-bill side-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="position-absolute " style="left: 50px;">
+                            <div class="sideNav-text ">My Wallet <span class="alert alert-primary ">Get Bonus!</span>
+                            </div>
+                        </div>
+
+                        <div class="sideNav-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+
+                    </a>
+                    <a class="sidebar d-flex align-items-center justify-content-between position-relative " href="games-history.html">
+                        <div class="sideNav-icon"><i class="fa fa-trophy side-icon " aria-hidden="true"></i></div>
+                        <div class="position-absolute" style="left: 50px;">
+                            <div class="sideNav-text">Games History</div>
+                        </div>
+
+                        <div class="sideNav-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+
+                    </a>
+                    <a class="sidebar d-flex align-items-center justify-content-between position-relative " href="transction-history.html">
+                        <div class="sideNav-icon"><i class="fa fa-history side-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="position-absolute" style="left: 50px;">
+                            <div class="sideNav-text">Transaction History</div>
+                        </div>
+
+                        <div class="sideNav-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+
+                    </a>
+                    <a class="sidebar d-flex align-items-center justify-content-between position-relative " href="refer-earn.html">
+                        <div class="sideNav-icon"><i class="fa fa-user side-icon" aria-hidden="true"></i></div>
+                        <div class="position-absolute" style="left: 50px;">
+                            <div class="sideNav-text">Refer &amp; Earn</div>
+                        </div>
+
+                        <div class="sideNav-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+
+                    </a>
+                    <a class="sidebar d-flex align-items-center justify-content-between position-relative " href="referral-history.html">
+                        <div class="sideNav-icon"><i class="fa fa-users side-icon" aria-hidden="true"></i></div>
+                        <div class="position-absolute" style="left: 50px;">
+                            <div class="sideNav-text">Referral History</div>
+                        </div>
+
+                        <div class="sideNav-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+
+                    </a>
+                    <a class="sidebar d-flex align-items-center justify-content-between position-relative " href="penalty-history.html">
+                        <div class="sideNav-icon"><i class="fa fa-minus-square side-icon" aria-hidden="true"></i> </div>
+                        <div class="position-absolute" style="left: 50px;">
+                            <div class="sideNav-text">Penalty History</div>
+                        </div>
+
+                        <div class="sideNav-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+
+                    </a>
+                    <a class="sidebar d-flex align-items-center justify-content-between position-relative " href="notification.html">
+                        <div class="sideNav-icon"><i class="fa fa-bell side-icon" aria-hidden="true"></i> </div>
+                        <div class="position-absolute" style="left: 50px;">
+                            <div class="sideNav-text">Notification</div>
+                        </div>
+
+                        <div class="sideNav-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+
+                    </a>
+                    <a class="sidebar d-flex align-items-center justify-content-between position-relative " href="support.html">
+                        <div class="sideNav-icon"><i class="fa fa-question-circle side-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="position-absolute" style="left: 50px;">
+                            <div class="sideNav-text">Support</div>
+                        </div>
+
+                        <div class="sideNav-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+
+                    </a>
+
+            </nav>
+
+
+            <!-- main-content -->
+            <div class="main-area">
+
+                <div class="m-4 border-bottom" style="height: 65px;">
+                    <img src="image/commission.png" width="20px" alt="">
+                    <span class="mx-2 fw-bolder">Responsible Gaming</span>
+                </div>
+                
+                <div class="responsible gaming my-5">
+
+                            <div class="mx-5">
+                                <h4 class="fw-bolder">Our Mission Statement</h4>
+                                <p>Play Games 24x7 encourages all its players to play responsibly. We are committed to
+                                    helping players who wish to stop playing or who wish to limit the amount that they
+                                    play.</p>
+                            </div>
+
+                            <div class="mx-5">
+                                <h4 class="fw-bolder">Ensure Responsible Play</h4>
+                                <ul>
+                                    <li>Players must be 18 years of age to play skill games for real money.</li>
+                                    <li>Players can request for their accounts to be temporarily blocked, if they want
+                                        to self-exclude themselves for some time.</li>
+                                    <li>Players can follow our 'Guide to Responsible Play, in order to keep a check on
+                                        their play behaviour.</li>
+                                </ul>
+
+                            </div>
+                            <div class="mx-5">
+                                <h4 class="fw-bolder">Guide to Responsible Play</h4>
+                                <p>Sometimes, players may find it hard to recognize that their online play is getting
+                                    out of control. A common reaction is to minimize, hide or deny such problems and the
+                                    harm it could be causing. Some people will lie to themselves about how much money or
+                                    time is being spent on online playing.</p>
+                                <p><b>Following are some of the best practices to help you play responsibly:</b></p>
+                                <ul>
+                                    <li>Play in moderation and only for entertainment.</li>
+                                    <li>Do not play to make money or escape problems.</li>
+                                    <li>Never chase your losses while playing.</li>
+                                    <li>Set aside an entertainment budget.</li>
+                                    <li>Keep track of the time and monitor the amount of money you spend.</li>
+                                    <li>Use the Add Cash limit option to help control the amount you spend.</li>
+                                    <li>Balance the time you spend on playing online games with other leisure
+                                        activities.</li>
+                                </ul>
+                            </div>
+                            <div class="mx-5">
+                                <h4 class="fw-bolder">Recognize whether you are not playing responsibly</h4>
+                                <p class="fw-bolder">Do you do any of the following:</p>
+                                <ul>
+                                    <li>Do you spend more money and time than you intend to playing games?</li>
+                                    <li>Do you feel guilty or ashamed while game playing habits?</li>
+                                    <li>Do you try to win back your losses?</li>
+                                    <li>Do you miss important things in life such as family time, work, leisure
+                                        activities, appointments to play games?</li>
+                                    <li>Do you think about your gameplay all day long?</li>
+                                    <li>Do you have arguments with friends or family about you playing habits?</li>
+                                    <li>Do you lie or steal to get money to play games?</li>
+                                    <li>Do you have debts or struggled financially to play games?</li>
+                                    <li>Has playing games negatively impacted your professional life?</li>
+                                    <li>Do you have relationship problems like arguments, disagreements or loss of
+                                        Connection with friends and family?</li>
+                                    <li>Have you experienced an increase in stress, depression or panic attacks due to
+                                        playing games?</li>
+                                </ul>
+                            </div>
+                            <div class="mx-5">
+                                <h4 class="fw-bolder">Game Prudence</h4>
+                                <p>Game Prudence is an independent body which aims to help players, playing on
+                                    skill-gaming websites, in incorporating responsible gaming habits into their
+                                    lifestyles. Game Prudence is a non-judgemental platform providing you with private,
+                                    confidential and free of cost psychological counselling, wherein you can identify
+                                    how healthy your gaming habits are as well as receive professional guidance from
+                                    experts. All Game Prudence experts are certified by iGaming Academy.<a
+                                        href="#">To Learn More..</a></p>
+                            </div>
+                            <div class="mx-5">
+                                <h4 class="fw-bolder">Get Help from Game Prudence</h4>
+                                <p>If you suspect that you are facing any of the issues mentioned above and as a result
+                                    have not been playing responsibly, or if you know someone who is facing similar
+                                    issues, kindly seek help immediately. You can get help by registering your request
+                                    at <a href="#">Game Prudence.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+        </div>
+
+
+        <!-- right-container -->
+        <div class="right-container col position-fixed"
+            style=" background-image: url(image/background-img.svg); left: 17%; overflow-y: hidden;">
+            <div class="d-none d-sm-block  text-center " style="margin-top: 200px;">
+                <img height="260px" src="image/apna-ludo.png" alt="" class="mb-5">
+                <h4 class="h2 text-center fw-semi">APNA LUDO
+                    <span class="h2 fw-bolder">WIN REAL CASH!</span>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/myjavascript.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
